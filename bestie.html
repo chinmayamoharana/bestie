@@ -1,0 +1,374 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Love is like a butterfly</title>
+<style>
+    body{background:linen;}
+*{margin:0; padding:0;}
+
+@keyframes anim3 {
+to{transform:translatey(-275px);}
+}
+
+#butterfly {
+width:300px;
+height:300px;
+position:relative;
+perspective:1000px;
+margin:auto;
+top:200px;
+animation:anim3 4s linear 1s alternate 1 forwards;
+}
+
+#body {
+width:10px;
+height:80px;
+background:#000;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:20px;
+}
+
+#head {
+width:10px;
+height:10px;
+border-radius:5px;
+background:#000;
+position:absolute;
+top:-9px;
+}
+
+@keyframes anim1 {
+to{transform:rotateY(90deg);}
+}
+
+.left {
+transform-origin:right;
+animation:anim1 3s ease-out .5s alternate infinite ;
+}
+
+@keyframes anim2 {
+to{transform:rotateY(-90deg);}
+}
+
+.right {
+transform-origin:left;
+animation:anim2 3s ease-out .5s  alternate infinite;
+}
+
+.wing {
+width:120px;
+height:100px;
+position:absolute;
+}
+#left-wing1 {
+top:50px;
+left:25px;
+border-radius:0px 80px 0 40px;
+background:#f4c2c2;
+}
+#left-wing2 {
+top:150px;
+left:25px;
+border-radius:40px 0px 80px 0px;
+background:#cd5e77;
+}
+#right-wing1 {
+top:50px;
+left:155px;
+border-radius:80px 0px 40px 0px;
+background:#f4c2c2;
+}
+#right-wing2 {
+top:150px;
+left:155px;
+border-radius:0px 40px 0px 80px;
+background:#cd5e77;
+}
+#left-antenna {
+width:50px;
+height:50px;
+border-top-right-radius:30px;
+border-right:2px solid black;
+position:absolute;
+left:94px;
+top:60px;
+transform:rotate(-10deg);
+}
+#right-antenna {
+width:50px;
+height:50px;
+border-top-left-radius:30px;
+border-left:2px solid black;
+position:absolute;
+top:60px;
+left:154px;
+transform:rotate(10deg);
+}
+.ball {
+width:15px;
+height:15px;
+border-radius:7.5px;
+position:absolute;
+background:#cd5e77;
+}
+.second {
+background:#f4c2c2;
+}
+#ball1{
+left:10px;
+top:15px;
+}
+#ball2{
+left:40px;
+top:43px;
+}
+#ball3{
+left:70px;
+top:20px;
+}
+#ball4{
+left:15px;
+top:70px;
+}
+#ball5{
+left:93px;
+top:65px;
+}
+#ball6{
+left:60px;
+top:75px;
+}
+
+#ball7{
+left:10px;
+top:75px;
+}
+#ball8{
+left:10px;
+top:20px;
+}
+#ball9{
+left:40px;
+top:45px;
+}
+#ball10{
+left:70px;
+top:60px;
+}
+#ball11{
+left:95px;
+top:25px;
+}
+#ball12{
+left:60px;
+top:10px;
+}
+
+#ball13{
+left:93px;
+top:10px;
+}
+#ball14{
+left:40px;
+top:20px;
+}
+#ball15{
+left:70px;
+top:45px;
+}
+#ball16{
+left:90px;
+top:70px;
+}
+#ball17{
+left:10px;
+top:65px;
+}
+#ball18{
+left:40px;
+top:75px;
+}
+
+#ball19{
+left:10px;
+top:25px;
+}
+#ball20{
+left:37px;
+top:5px;
+}
+#ball21{
+left:85px;
+top:20px;
+}
+#ball22{
+left:60px;
+top:45px;
+}
+#ball23{
+left:30px;
+top:60px;
+}
+#ball24{
+left:90px;
+top:75px;
+}
+
+@keyframes anim4{
+from{
+transform:rotate(1turn);
+}
+to{transform:rotate(2turn);
+}
+}
+
+#garden {
+width:50px;
+height:50px;
+position:relative;
+top:100px;
+margin:auto;
+animation:anim4 5s linear reverse 1;
+}
+
+#flower {
+position:absolute;
+width:10px;
+height:10px;
+background:yellow;
+top:45%;
+left:40%;
+transform:scale(1.5);
+}
+
+.petal {
+position:absolute;
+width:15px;
+height:15px;
+border-radius:7.5px;
+background:crimson;
+}
+
+#flower div:nth-child(1){
+top:5px;
+left:-10px;
+}
+#flower div:nth-child(2){
+top:-5px;
+left:8px;
+}
+#flower div:nth-child(3){
+top:-7.5px;
+left:-13px;
+}
+#flower div:nth-child(4){
+top:-14px;
+left:-2px;
+}
+#flower div:nth-child(5){
+top:6px;
+left:3px;
+}
+
+@keyframes anim5{
+to{opacity:1;}
+}
+
+h2 {
+width:300px;
+font-size:16px;
+text-align:center;
+line-height:20px;
+margin:auto;
+margin-top:-50px;
+border:3px solid crimson;
+padding:15px;
+border-radius:40px;
+background:#fff;
+color:#362204;
+opacity:0;
+animation:anim5 4s ease 5s alternate forwards;
+}
+
+</style>
+</head>
+<body>
+
+<audio id="music" autoplay>
+        <source src="https://nghype.com/wp-content/uploads/2023/05/LOVE-IS-LIKE-A-BUTTERFLY.mp3" type="audio/mp3">
+    </audio>
+    
+<div id="garden" >
+<div id="flower">
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+<div class="petal"></div>
+</div>
+</div>
+
+<div id="butterfly">
+<div id="body">
+<div id="head"></div>
+</div>
+<div id="left-antenna"></div>
+<div id="right-antenna"></div>
+<div id="left-wing1" class="left wing">
+<div id="ball1" class="ball"></div>
+<div id="ball2" class="ball"></div>
+<div id="ball3" class="ball"></div>
+<div id="ball4" class="ball"></div>
+<div id="ball5" class="ball"></div>
+<div id="ball6" class="ball"></div>
+</div>
+<div id="left-wing2" class="left wing">
+<div id="ball7" class="ball second"></div>
+<div id="ball8" class="ball second"></div>
+<div id="ball9" class="ball second"></div>
+<div id="ball10" class="ball second"></div>
+<div id="ball11" class="ball second"></div>
+<div id="ball12" class="ball second"></div>
+</div>
+<div id="right-wing1" class="right wing">
+<div id="ball13" class="ball"></div>
+<div id="ball14" class="ball"></div>
+<div id="ball15" class="ball"></div>
+<div id="ball16" class="ball"></div>
+<div id="ball17" class="ball"></div>
+<div id="ball18" class="ball"></div>
+</div>
+<div id="right-wing2" class="right  wing">
+<div id="ball19" class="ball second"></div>
+<div id="ball20" class="ball second"></div>
+<div id="ball21" class="ball second"></div>
+<div id="ball22" class="ball second"></div>
+<div id="ball23" class="ball second"></div>
+<div id="ball24" class="ball second"></div>
+
+</div>
+</div>
+
+<h2>Butterflies can't see their wings.<br> They can't see how truly beautiful they are,<br> but everyone else can.<br> But for me you are most beautiful than everyone <br> <b> Happy Birthday to you dear bestie</b></h2>
+
+</body>
+<script>
+var butterfly=document.getElementById("butterfly");
+var music=document.getElementById("music");
+
+
+window.addEventListener('mouseover',function(){
+        music.play();
+})
+
+window.addEventListener('click',function(){
+        music.play();
+})
+
+
+</script>
+</html>
